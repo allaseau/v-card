@@ -1,0 +1,24 @@
+.part1 { grid-area: header; }
+.part2 { grid-area: menu; }
+.part3 { grid-area: main; }
+.part4 { grid-area: right; }
+.part5 { grid-area: footer; }
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'header header header header right right'
+    'menu main main main right right'
+    'menu main main main footer footer';
+  gap: 15px;
+  background-color: rgba(143, 129, 129, 0.433);
+  padding: 10px;
+  border: solid#484c4f;
+}
+
+.grid-container > div {
+  background-color: #484c4f;
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+}
